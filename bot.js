@@ -35,12 +35,10 @@ var donnes = {}
 
 client.on('ready', () => {
   console.log("Prêt !");
-  client.user.setUsername("Lulu5239")
+//client.user.setUsername("Lulu5239")
   client.user.setActivity("se faire coder !", "type:PLAYING")
-  client.user.setStatus("online")
+//client.user.setStatus("online")
 //client.user.setAvatar("https://cdn.discordapp.com/app-icons/445157515802443778/6560d7ee104cd704915625a330a0a8e4.png")
-  client.user.setEmail("lucmail52393@gmail.com")
-  client.user.setPassword(/* ---------------------------------------------------------------------------------------------------- */"lulu5467")
   var donnes = JSON.parse(fs.readFileSync("stockage/donnes.json", "utf8"))
 });
 
