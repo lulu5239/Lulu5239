@@ -2,12 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 var fs = require("fs")
 
-var tokens = ["NDQ1MTU3NTE1ODAyNDQzNzc4.DdmY1g.uYnYajCjF8y8vt1bMvXNZZok3nA",
-"MjUxMzExMzQ4NDcyODcyOTYw.CxjrEA.0WJPDeKkVIrNJFImveaRfbU2U4w",
-"MjMxMjk3Mzg3OTU4NzYzNTIw.CtaOnA.eiqE_DIaS2hHW_c-k4jWLHR1Eu8",
-"NDQ2Mzk5Mjk2MjIxMzQ3ODQw.DenN6w.L8_EBbOWT509MmZ0oVHD-VnoO1E",
-"NDQwODc5ODEwMTE4NTQ5NTA1.Deryeg.Jot_pKokzWYNxwC_ulC951y3TZ4",
-"NDI4NjE0OTM5MDA4MDQwOTYw.DesOMg.6koy9rIhPQRc7_s-vLHcMQVJrJs"]
+var tokens = process.env.TOKEN
 
 var prefixe = "5239:"
 var tracé = ""
@@ -1088,4 +1083,4 @@ function emoji (couleur, nom, id) {
   }
 }
 
-client.login(tokens[mode]);
+client.login(tokens);
